@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "test": "playwright test",
+    "install:browsers": "playwright install chromium firefox webkit --with-deps",
     "merge-reports": "playwright merge-reports --reporter html"
   },
   "devDependencies": {

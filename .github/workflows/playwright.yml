@@ -21,7 +21,7 @@ jobs:
         run: npm ci
 
       - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
+        run: npx playwright install chromium firefox webkit --with-deps
 
       - name: Run Safari tests
         run: npx playwright test --project=Safari --output=playwright-report-macos --reporter html
@@ -49,7 +49,7 @@ jobs:
         run: npm ci
 
       - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
+        run: npx playwright install chromium firefox webkit --with-deps
 
       - name: Run Edge/Chrome/Firefox/Pixel tests
         run: npx playwright test --project=Edge --project=Chrome --project=Firefox --project=Pixel7 --output=playwright-report-windows --reporter html
