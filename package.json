@@ -1,0 +1,12 @@
+{
+  "name": "playwright-cross-browser-example",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "merge-reports": "playwright merge-reports --reporter html"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.1"
+  }
+}
